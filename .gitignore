@@ -5,3 +5,6 @@ data/processed/
 data/style/
 paper/
 presentation/
+report/notebook-export/
+report/semi-dustbin/
+notebook/.ipynb_checkpoints/

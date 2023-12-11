@@ -1,0 +1,6 @@
+NEIGHBORHO, pop, hhincomeE, owner_occupied_housingE, renter_occupied_housingE, public_transportE, monthly_housing_costE, drive_to_workE, demographic  housing cost score, demographic  age score, demographic income score, demographic total score, transport score(service area)
+East Atlanta, 5101, 111759, 1467, 641, 54, 1589, 2929, 4, 4, 5, 13, 3
+Peachtree Heights West, 4874, 83243, 1279, 1792, 63, 1625, 2786, 4, 4, 4, 12, 4
+Buckhead Forest, 3372, 83243, 1279, 1792, 63, 1625, 2786, 4, 4, 4, 12, 4
+Midtown, 16218, 109426, 1569, 1863, 276, 1914, 2482, 5, 2, 5, 12, 4
+Inman Park, 6196, 78182, 412, 882, 117, 1657, 1237, 4, 4, 4, 12, 4

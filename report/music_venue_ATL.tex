@@ -418,11 +418,11 @@ Considering Transportation, Demographic, and Urban Planning Factors\\
 \begin{document}
     
     % \maketitle
+\tableofcontents
 
-
+\newpage
 
 \section{Introduction}
-
 
 Atlanta’s city planning vision is committed to fostering an economically viable and community-centric metropolitan area. This vision includes the transformation of Atlanta into a globally recognized destination for entertainment and cultural exchange, welcoming all racial, ethnic, and national groups (Atlanta Department of City Planning, 2021).
 
@@ -475,6 +475,14 @@ The objectives of this project are to:
 \item{Identify neighborhoods with high potential for establishing metal music venues, considering transport, demographic, and urban planning factors.}
 \item{Contribute to the promotion of a vibrant music scene in Atlanta.}
 \end{enumerate}
+
+\section{Literature Review}
+
+\subsection{Music Industry and the Cities}
+The music industry played a significant role in the economic development of cities, contributing to job creation and economic growth(Florida, 2010) . The importance of live music venues in cities was also highlighted (Whiting, 2021). Carah et al. argued that small live music venues have alternative forms of capital and serve as niche spaces for cultural production (Carah et al., 2021), who explored how owners and managers of original live music venues navigate cultural, commercial, and regulatory forces in hyper-commercialised nightlife precincts.
+
+\subsection{Scoiolgy}
+Tai examined the role of gatekeeping and social capital in live music scenes in the context of Atlanta and Taipei(Tai, 2014). The study provides insights into the dynamics of live music scenes in different cultural contexts. The genre of music also plays a role in the music scene of a city. Walser discussed the powerand preference in heavy metal music(Walser, 1993). Shukla (2022) conducted research on the social psychology and demography of heavy metal.
 
 \section{Data Processing and Inclusion}
 
@@ -539,7 +547,7 @@ Before integrating data into the spatial model, two crucial steps are executed. 
 Figure 3: Music Venue Service Area
 \end{center}
 
-
+\newpage
 
 
 
@@ -710,19 +718,23 @@ Figure 10: Transport Analysis: Service Area Score \& Figure 11: Demographic Anal
 
 Upon the integration of transport and demographic scores, the neighborhoods that emerge with the highest scores (16 out of a possible 18) are Midtown, Inman Park, East Atlanta, Peachtree Heights West, and Buckhead Forest. These neighborhoods exhibit advantageous conditions for the establishment of a metal music venue business, as evidenced by their accessibility, demographic composition, and urban planning factors. Through the quantification and amalgamation of these factors, the study identifies these neighborhoods as the most propitious locations for music venue business.
 
-\begin{figure}[H]
-\begin{center}
-\centering
-\includegraphics[width=1\textwidth]{map2/4_transport and demographic.jpg}
-\caption{Figure 1: Different levels of urban development intensity}
-\label{fig:figure1}
-\end{center}
+\begin{figure}[H] 
+    \centering
+    \subfloat{%
+        \includegraphics[width=0.48\textwidth]{map2/4_transport and demographic.jpg}%
+        \label{fig:a}%
+        }%
+    \hfill%
+    \subfloat{%
+        \includegraphics[width=0.48\textwidth]{map2/stacked_chart.png}%
+        \label{fig:b}%
+        }%
+    \caption{all the data}
 \end{figure}
 
-
 \begin{center}
 \centering
-Figure 12: Final Score for Neighborhoods
+Figure 12: Final Score for Neighborhoods \& Chart 2: Total Score Stack Chart
 \end{center}
 
 \newpage
@@ -739,34 +751,33 @@ The Midtown, Inman Park, and Buckhead Forest neighborhoods outperform others in 
 \end{center}
 \end{figure}
 
+\begin{center}
+\centering
+Figure 13: Zoning Restriction Analysis \& Figure 14: LCI Restriction Analysis
+\end{center}
+
+The figure illustrate the distribution of parking lot amenities within and in the vicinity of each potential neighborhood. Considering the availability of parking lots, Midtown and Inman Park emerge as the most viable options. This conclusion is drawn based on the current distribution and accessibility of parking facilities in these neighborhoods.
+
 \begin{figure}[H]
 \begin{center}
 \centering
-\includegraphics[width=0.6\textwidth]{map2/5_LCI.jpg}
+\includegraphics[width=0.7\textwidth]{map2/5_parking.jpg}
 \caption{Figure 1: Different levels of urban development intensity}
 \label{fig:figure1}
 \end{center}
 \end{figure}
 
-The figure illustrate the distribution of parking lot amenities within and in the vicinity of each potential neighborhood. 
-
-Taking into account the availability of parking lots, Midtown and Inman Park emerge as the most viable options. This conclusion is drawn based on the current distribution and accessibility of parking facilities in these neighborhoods.
-
-\begin{figure}[H]
 \begin{center}
 \centering
-\includegraphics[width=1\textwidth]{map2/5_parking.jpg}
-\caption{Figure 1: Different levels of urban development intensity}
-\label{fig:figure1}
+Figure 15: Parking Restriction Analysis
 \end{center}
-\end{figure}
 
 \subsection{Conclusion}
 Upon quantifying both transport and demographic factors, and imposing transport and urban planning factors as constraints, the study concludes that Midtown and Inman Park emerge as the most favorable locations for establishing a metal music venue business.
 
-Midtown, with its well-established music venue business, presents a competitive landscape. It is likely to resonate with the metal music enthusiasts due to its familiarity. However, it is pertinent to note that this venture in Midtown could be characterized as high-risk, high-reward.
+Midtown, with its well-established music venue business, presents a competitive landscape. It is likely to resonate with the metal music enthusiasts due to its familiarity. However, it is important to consider that the real estate prices in this area are comparatively higher. This venture in Midtown could be characterized as high-risk, high-reward.
 
-On the other hand, Inman Park, with fewer existing music venues, exhibits a higher potential for this business, given the suitable conditions it offers. The proposed location for the music venue is Edgewood Avenue, renowned for its restaurant street. However, it is important to consider that the real estate prices in this area are comparatively higher. This factor could influence the overall feasibility of the venture.
+On the other hand, Inman Park, with fewer existing music venues, exhibits greater potential for this business, given the suitable conditions it offers. The author proposes Edgewood Avenue, renowned for its restaurant street, as the location for the music venue. However, it’s important to note that it’s less populated and the household income is lower than Midtown. These factors could influence the success of a music venue in this area. 
 
 \subsection{Discussion}
 
@@ -833,9 +844,9 @@ Future research could employ Natural Language Processing (NLP) to extract insigh
 
 {[}14{]} Shukla, A. (2022). The Social Psychology Of Heavy Metal \& Rock Music: Research On Metalheads. \textit{Cognition Today}. Retrieved September 19, 2022.
 
-{[}15{]} Gutiérrez, J., & García-Palomares, J. C. (2008). Distance-Measure Impacts on the Calculation of Transport Service Areas Using GIS. Environment and Planning B: Planning and Design, 35(3), 480-503. https://doi.org/10.1068/b33043
+{[}15{]} Gutiérrez, J., \& García-Palomares, J. C. (2008). Distance-Measure Impacts on the Calculation of Transport Service Areas Using GIS. Environment and Planning B: Planning and Design, 35(3), 480-503. https://doi.org/10.1068/b33043
 
-{[}16{]}Gao, S., Janowicz, K., & Couclelis, H. (2017). Extracting urban functional regions from points of interest and human activities on location‐based social networks. Transactions in GIS, 21(3), 446-467.
+{[}16{]}Gao, S., Janowicz, K., \& Couclelis, H. (2017). Extracting urban functional regions from points of interest and human activities on location‐based social networks. Transactions in GIS, 21(3), 446-467.
 
 
 
@@ -850,7 +861,45 @@ Future research could employ Natural Language Processing (NLP) to extract insigh
 
 
     % Add a bibliography block to the postdoc
-    
-    
-    
+
+\newpage
+
+\appendix
+\section{Appendix A: Charts}
+
+\begin{figure}[H]
+\begin{center}
+\centering
+\includegraphics[width=0.5\textwidth]{map2/pie.jpg}
+\caption{Data source and Usage}
+\label{fig:figure1}
+\end{center}
+\end{figure}
+
+\begin{center}
+\centering
+Chart 1: Metalhead's age
+\end{center}
+
+\begin{figure}[H]
+\begin{center}
+\centering
+\includegraphics[width=0.5\textwidth]{map2/stacked_chart.png}
+\caption{Data source and Usage}
+\label{fig:figure1}
+\end{center}
+\end{figure}
+
+\begin{center}
+\centering
+Chart 2: Total Score Stack Chart
+\end{center}
+
+
+\newpage
+\section{Appendix B: Code for Geo-spatial Data Analysis}
+
 \end{document}
+
+
+
