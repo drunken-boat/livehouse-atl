@@ -167,7 +167,6 @@
 
 \title{Which Neighborhood in Atlanta is Best for a Metal Music Venue Business? \\
 Considering Transportation, Demographic, and Urban Planning Factors\\
-\large CP6542: Transport and GIS Final Report\\
 }
 
 
@@ -183,11 +182,14 @@ Considering Transportation, Demographic, and Urban Planning Factors\\
 
 
     \vspace{0.5cm}
-    \Large \theauthor{}  % Using \theauthor to access the previously defined author
+    \Large \theauthor{}  % Using \theauthor to access the previously defined 
+    % \large \thetopic{}
+
 
 
     \vspace{0.5cm}
     \Large {Instructor: Yiyi He\\
+    CP6542: Transport and GIS Final Report\\
     GitHub: https://github.com/drunken-boat/livehouse-atl
     }
     \vspace{0.5cm}
@@ -417,30 +419,30 @@ Considering Transportation, Demographic, and Urban Planning Factors\\
     
     % \maketitle
 
-    
+
+
 \section{Introduction}
 
-Atlanta's city planning vision aims to build an economically viable and community-based metropolitan area. This includes making Atlanta an attractive, accessible, and world-class destination for entertainment and cultural exchange for all racial, ethnic, and national groups.(Atlanta Department of City Planning, 2021)
 
-According to the City of Atlanta Department of City Planning (DCP), arts serve as an economic driver. The DCP plans to invest in neighborhood commercial districts with vibrant public spaces and expand resources to support local neighborhood scale economies that can tap into regional and global networks. (DCP, 2021)
+Atlanta’s city planning vision is committed to fostering an economically viable and community-centric metropolitan area. This vision includes the transformation of Atlanta into a globally recognized destination for entertainment and cultural exchange, welcoming all racial, ethnic, and national groups (Atlanta Department of City Planning, 2021).
 
-Live music venues, which are important for art and make great small businesses, rely on complex systems of cultural and social capital to bring revenue into each venue space. This revenue can be further capitalized to improve business growth.(Whiting, 2021)
+The City of Atlanta Department of City Planning (DCP) recognizes the arts as a significant economic catalyst. The DCP intends to invest in vibrant public spaces within neighborhood commercial districts and expand resources to bolster local economies capable of connecting with regional and global networks (DCP, 2021).
 
-Economic geography suggests that the need to access large and sophisticated markets and the nature of music and creative industries to cluster in scenes leads to geographic concentration.(Florida et al., 2010)
+Live music venues, vital for the arts and valuable as small businesses, depend on complex systems of cultural and social capital to generate revenue. This revenue can be further capitalized to enhance business growth (Whiting, 2021).
 
-Metal music is growing in Atlanta and has regional, even national, impact. The Southeast is one of the most promising areas in the country right now when it comes to the music business, with an extremely deep pool of both fans and bands. The "Mass Destruction Music Fest" has put the Southeast on the national metal map (Castro, 2017).
+Economic geography theory suggests that the need for access to large and sophisticated markets, with the tendency of music and creative industries to cluster, leads to geographic concentration (Florida et al., 2010).
 
-Given the growth of metal music and the cultural significance of music venues, it's a good time and  to invest in a metal music venue in Atlanta. However, according to music venue owners and investors, venues are important sites where cultural values and market imperatives are negotiated. Most booking agents and small venue owners often express the pursuit of profit as a secondary objective, seeing themselves as curators of cultural space and facilitators of the types of sociality required for such spaces to thrive.(Carah et al., 2017)
+Metal music, experiencing growth in Atlanta and having regional and even national impact, positions the Southeast as one of the most promising areas in the country for the music business. The “Mass Destruction Music Fest” held in Atlanta in recent years have notably placed the Southeast on the national metal map (Castro, 2017).
 
-The  for a music venue business is important and is an interdisciplinary topic. Therefore, it's important to integrate transport, geography, urban planning, and sociology to investigate which neighborhood in Atlanta is best for a metal music venue business. This project provide a spatial and mathmetical model to find the best neighborhood for a metal music venue business.
+Given the growth of metal music and the cultural significance of music venues, the current period presents a favorable opportunity to invest in a metal music venue in Atlanta. However, music venue owners and investors highlight that venues serve as critical sites for negotiating cultural values and market imperatives. Many booking agents and small venue owners often prioritize the cultural space and facilitation to thrive over the pursuit of profit (Carah et al., 2017).
+
+The location for a music venue business is a crucial consideration and an interdisciplinary topic. Therefore, it is essential to integrate transport, geography, urban planning, and sociology to investigate the optimal neighborhood in Atlanta for a metal music venue business. 
 
 \subsection{Problem Statement}
-In the vibrant city of Atlanta, known for its diverse musical heritage, there is a growing interest in metal music. As a result, there is a potential market for new metal music venues. However, the success of such a venture depends on various factors including location, accessibility, and the demographic characteristics of the neighborhood. This project aims to analyze these factors to identify the most suitable neighborhood for establishing a new metal music venue.
-
-This project aims to identify the best neighborhood in Atlanta for establishing a metal music venue business, considering transportation and demographic factors.
+This project aims to identify the best neighborhood in city of Atlanta for a metal music venue business, considering transportation, demographic, and urban planning factors.
 
 \subsection{Project Location}
-Atlanta’s strategic geographical position and robust transportation system make it a key gateway for the national and international music industry in the southeastern region. According to a 2011 report, the music industry was projected to contribute over 313 million dollars annually to state and local government revenues, with an estimated total employment of 19,955.(Tai, 2014)
+The location is the city of Atlanta, which will be referred to as Atlanta for short. It's strategic geographical position and robust transportation system make it a key gateway for the national and international music industry in the southeastern region. According to a 2011 report, the music industry was projected to contribute over 313 million dollars annually to state and local government revenues, with an estimated total employment of 19,955.(Tai, 2014)
 
 \begin{figure}[H]
 \begin{center}
@@ -464,7 +466,8 @@ Music Venue: A music venue is any location used for a concert or musical perform
 
 
 \subsection{Conceptual Vision and Model}
-The conceptual model, comprising both spatial and mathematical components, transforms transport and demographic factors into quantifiable metrics. These metrics are spatially joined by location, with the area serving as a weight to aggregate metric scores for neighborhoods. Neighborhoods with the highest scores are selected, and restriction layers are overlaid to identify the most suitable neighborhoods. The final step involves pinpointing the neighborhood that is optimal for a metal music venue business.
+The conceptual model, which includes spatial and mathematical components, converts transport and demographic factors into measurable metrics. These metrics are represented by scores, and then joined by location, using the area as a weight to aggregate scores for neighborhoods. The neighborhoods with the highest scores are then selected, and restriction layers are applied to determine the most suitable ones. The final step is identifying and conducting a detailed analysis of the neighborhood that is most suitable for a metal music venue business.
+
 \subsection{Objectives}
 The objectives of this project are to:
 \begin{enumerate}
@@ -484,25 +487,21 @@ City of Atlanta Neighborhood Area polygon data were derived from the course mate
 \textbf{Music Venue Point of Interest}
 Points of interest for music venues were obtained through query from the Yelp Business Search API(Yelp, 2023). 
 
-\textbf{Demographic Data: Census Tract}
-City of Atlanta is within Fulton and DeKalb county. Polygon data wtih census tract in Fulton and DeKalb county, which includes monthly housing price, median household income, median age, and race, were sourced from the American Community Survey(ACS) 5-year estimates for 2019(U.S. Census Bureau, 2019). Monthly housing price reflects real estate cost, which represent rent price for music venue, median household income and median age represent neighborhood consuming characteristics.
+\textbf{Demographic Data: Census Tract} The author focused on Atlanta, situated within Fulton and DeKalb counties. The author sourced polygon data from the American Community Survey (ACS) 5-year estimates in 2019 (U.S. Census Bureau, 2019). This data included monthly housing prices, median household income, median age, and racial distribution. The housing prices offered insight into the rental costs for music venues, while the median household income and age highlighted the consumer characteristics of the neighborhood.
 
-\textbf{Demographic Data: Metalheads' demography}
-The age, gender, race distribution is from a sociology paper researching metalheads (Shukla,2022).
+\textbf{Demographic Data: Metalheads’ Demography} 
+Shukla’s 2022 sociology paper provided the age, gender, and racial distribution data of metalheads(Shukla,2022).
 
-\textbf{Transport Data: Road network, parking lots} 
-
-Road network polylines and parking lots (points and polygons) in city of Atlanta are downloaded with Python query with OSMnx(Boeing, 2017).
+\textbf{Transport Data: Road Network and Parking Lots} 
+The author used a Python query with OSMnx (Boeing, 2017) to download the road network polylines and parking lot data(points and polygons) for Atlanta, the retrieving time stamp is November 21st, 2023.
 
 \textbf{Urban Planning Data: Zoning and Livable Center Initiative}
 Zoning and Livable Center Initiative(LCI) are directly downloaded from fulton county GIS data portal(Fulton County, 2023).
 
-
-
 \begin{figure}[H]
 \begin{center}
 \centering
-\includegraphics[width=0.4\textwidth]{diagram/data.jpg}
+\includegraphics[width=0.3\textwidth]{diagram/data.jpg}
 \caption{Data source and Usage}
 \label{fig:figure1}
 \end{center}
@@ -510,21 +509,21 @@ Zoning and Livable Center Initiative(LCI) are directly downloaded from fulton co
 
 \begin{center}
 \centering
-Figure 1: Data source and Usage
+Figure 2: Data source and Usage
 \end{center}
 
 
 \subsection{Data Accuracy}
 
-There are several potential sources of inaccuracies in the data. OSMnx data, which is obtained from GPS, might have meter-level inaccuracies due to daily variations in accuracy and systematic errors. There might also be inaccuracies in naming (OpenStreetMap Wiki, 2020). The Yelp Business Search API, which returns up to 1000 businesses and excludes businesses without reviews, might overlook some music venues that either lack reviews or exceed the limit (Yelp, 2023). Demographic data of metalheads is researched in England, so there could be unknown difference in Atlanta, due to different cultural and historical context
+This project acknowledges several potential sources of inaccuracies in the data. The OSMnx data, derived from GPS, may exhibit meter-level inaccuracies due to daily variations in accuracy and systematic errors. Additionally, naming inaccuracies may exist (OpenStreetMap Wiki, 2020). The Yelp Business Search API, which returns up to 1000 businesses and excludes businesses without reviews, may not account for some music venues that lack reviews or exceed the limit (Yelp, 2023). Furthermore, the demographic data of metalheads, researched in England, may not fully apply to Atlanta due to differing cultural and historical contexts.
 
-The first two inaccurcy are ignored because this project is in neighborhood level. The potential demographic inaccuracy is solved by only considering age distribution, and not considering race and gender.
+The first two inaccuracies are disregarded as this project operates at the neighborhood level. The potential demographic inaccuracy is mitigated by focusing solely on age distribution, excluding race and gender considerations.
 
-To enhance accuracy, this project employs 5-year estimates from the ACS instead of 1-year estimate. Demographic data collected in a 5-year time span offer increased statistical reliability(U.S. Census Bureau, 2019).
-
+To bolster accuracy, this project utilizes 5-year estimates from the ACS, rather than 1-year estimates. This approach enhances statistical reliability by drawing on a larger data set (U.S. Census Bureau, 2019).
 
 \subsection{Data Processing}
-prior to incorporating data into the spatial model, two key steps are undertaken. The first step involves transforming the coordinate reference system to WGS 84 UTM Zone 16. The second step is service area in network analysis. In ArcGIS Pro, use music venue points of interest as facilities, time thresholds set at 5, 10, 15, and 20 minutes, and using driving as network type.
+
+Before integrating data into the spatial model, two crucial steps are executed. The initial step involves transforming the coordinate reference system to WGS 84 UTM Zone 16. The subsequent step entails conducting a service area analysis in the network. In ArcGIS Pro, music venue points of interest serve as facilities, with time thresholds set at 5, 10, 15, and 20 minutes, and driving designated as the network type (Gutiérrez, 2008).
 
 \begin{figure}[H]
 \begin{center}
@@ -560,57 +559,63 @@ The spatial and mathematical model involved building a spatial model to convert 
 
 \begin{center}
 \centering
-Figure 2: Model Steps
+Figure 4: Model Steps
 \end{center}
 
 \subsection{Model Steps}
 
-\begin{enumerate}
-\item{Convert transport and demographic factors to quantifiable metrics.\\
-In transport factor(network analysis), apply scores according to accessibility to existing  music venues. Higher socre means nearer to exisiting music venues. according to economic geography, the concentration is good for music venue business. And more accesisbile place means more familiar to current metalheads, and easier to build cultural recognition. For example, sercive area within 0-5 minutes driving get score 4 out of 4.
 
-In age distribution, according to metalheads' age distribution in research, apply the score to each census tract. Higher score means more similar range to metalheads' age range. For example, age 25-35 will get score 4 out of 4.
+\textbf{1. Convert transport and demographic factors to quantifiable metrics.}\\
+In the transport factor (network analysis), scores were applied based on accessibility to existing music venues. A higher score indicated shorter driving time to existing music venues. According to economic geography, concentration is beneficial for the music venue business. More accessible places are more familiar to current metalheads, making it easier to build cultural recognition. For instance, a service area within 0-5 minutes driving received a score of 4 out of 4.
+
+In terms of age distribution, the author applied scores to each census tract based on the age distribution of metalheads from the research. A higher score indicated a more similar range to the metalheads’ age range. For example, the age range of 25-35 received a score of 4 out of 4.
 
 
-
-\begin{figure}[H]
-\begin{center}
-\centering
-\includegraphics[width=0.3\textwidth]{map2/pie.jpg}
-\caption{Figure 1: Different levels of urban development intensity}
-\label{fig:figure1}
-\end{center}
+\begin{figure}[H] 
+    \centering
+    \subfloat{%
+        \includegraphics[width=0.48\textwidth]{map2/pie.jpg}%
+        \label{fig:a}%
+        }%
+    \hfill%
+    \subfloat{%
+        \includegraphics[width=0.48\textwidth]{map2/3_age.jpg}%
+        \label{fig:b}%
+        }%
+    \caption{all the data}
 \end{figure}
 
-\begin{figure}[H]
 \begin{center}
 \centering
-\includegraphics[width=0.5\textwidth]{map2/3_age.jpg}
-\caption{Figure 1: Different levels of urban development intensity}
-\label{fig:figure1}
+Chart 1: Metalhead's age  \& Figure 5: Demographic Analysis: Age Spatial Distribution
 \end{center}
-\end{figure}
-In median household income, seperate income to 5 ranges according to equal quantile, apply scores according to quantiles. Higher score means higher consuming capacity. For example, 102303 - 208750 dollars will get score 5 out of 5.
-\begin{figure}[H]
-\begin{center}
-\centering
-\includegraphics[width=0.5\textwidth]{map2/3_income.jpg}
-\caption{Figure 1: Different levels of urban development intensity}
-\label{fig:figure1}
-\end{center}
-\end{figure}
-In monthly housing cost, seperate income to 5 ranges according to equal quantile, apply scores according to quantiles. Higher score means higher consuming capacity. For example, 1657 - 2761 dollars will get score 5 out of 5.
-\begin{figure}[H]
-\begin{center}
-\centering
-\includegraphics[width=0.5\textwidth]{map2/3_monthly housing cost.jpg}
-\caption{Figure 1: Different levels of urban development intensity}
-\label{fig:figure1}
-\end{center}
-\end{figure}
-}
 
-\item{Spatial join service area and census tract with scores to neighborhoods\\
+In the median household income, the author separated income into 5 ranges according to equal quantile and applied scores according to quantiles. A higher score indicated higher consuming capacity. For example, an income range of 102303 - 208750 dollars received a score of 5 out of 5.
+
+In monthly housing cost, the author separated income into 5 ranges according to equal quantile and applied scores according to quantiles. A higher score indicated higher consuming capacity. For example, a monthly housing cost range of 1657 - 2761 dollars received a score of 5 out of 5.
+
+
+\begin{figure}[H] 
+    \centering
+    \subfloat{%
+        \includegraphics[width=0.48\textwidth]{map2/3_monthly housing cost.jpg}%
+        \label{fig:a}%
+        }%
+    \hfill%
+    \subfloat{%
+        \includegraphics[width=0.48\textwidth]{map2/3_income.jpg}%
+        \label{fig:b}%
+        }%
+    \caption{all the data}
+\end{figure}
+
+\begin{center}
+\centering
+Figure 6: Demographic Analysis: Housing Cost \& Figure 7: Demographic Analysis: Household Income
+\end{center}
+
+
+\textbf{2. Spatial join service area and census tract with scores to neighborhoods\\}
 In the first steps, the scores are in the service area polygons or census tract polygon, and considering the objective is to find out the best neighborhood, so the author join score attribute by location, and sum the score in each neighborhoods based on area.\\
 In the initial stages of the process, each service area polygon or census tract polygon is assigned a score, denoted as $S_i$, where $i$ represents the index of the polygon. The objective is to identify the optimal neighborhood, which necessitates the aggregation of scores by location. This is achieved by associating the score attribute with each neighborhood. The total score, $T_j$, for a given neighborhood $j$, is computed by summing the scores of all polygons within the neighborhood, each weighted by their respective area, $A_i$. Mathematically, this can be represented as:
 
@@ -619,53 +624,53 @@ T_j = \sum_{i \in N_j} \frac{A_i}{A_{neighborhood}} \cdot S_i
 \end{equation}
 
 Here, $N_j$ signifies the set of polygons within neighborhood $j$, and $A_{total}$ is the total area of all polygons. This equation effectively calculates the weighted scores in each neighborhood based on area, aligning with the described procedure.
-}
 
-\item{Select neighborhoods with highest scores(juxtaposed)\\
+
+\textbf{3. Select neighborhoods with highest scores(juxtaposed)\\}
 After summarying up the score to neighborhood, sort final score in descending order, and select the neighborhood that has top score.
-}
 
-\item{Overlay restriction layers to find the best neighborhood(s)
+
+\textbf{4. Overlay restriction layers to find the best neighborhood(s)}
 The author consider two restrictions: urban planning(zoning and LCI) and transport(parking lot).  
 
-
-\textbf{Zoning and LCI}
 Land use designated for commercial and mixed-use purposes aligns more effectively with the operational requirements of a music venue business. Furthermore, the LCI(Livable Centers Initiative), which advocates for the creation of vibrant, walkable spaces, provides additional support for these neighborhoods as potential locations for the proposed music venue. The more ratio of commercial and mixed-use area, and the more overlay with LCI, the more suitable for music venue business for a neighborhood.
 
-\textbf{Parking}
-Metal music events predominantly occur during the evening hours, leading to a majority of the audience opting to drive to the venue. To cater to this demographic, music venues typically undertake one of two strategies. They either allocate substantial financial resources towards the acquisition of a parking lot, or they strategically select a location in close proximity to public parking facilities. 
-}
-\item {Find the neighborhood that is best for metal music venue business}
-\end{enumerate}
+Metal music events usually occur during the evening hours((Walser, 1993), leading to a majority of the audience opting to drive to the venue. To cater to this demographic, music venues typically undertake one of two strategies. They either allocate substantial financial resources towards the acquisition of a parking lot, or they strategically select a location in close proximity to public parking facilities. 
+
+\textbf{5. Find the neighborhood that is best for metal music venue business}
 
 
-
-
-\subsection{Method Integration}
-The method integration involved using ArcGIS Pro for Network Analyst (Service Area), QGIS for Layout, Join attribute by location, Field Calculator, attribute table, and Python for OSMNX, Folium, Geopandas.
+\subsection{Integration of Tools and Methods} The author integrated various tools and methods in this study. ArcGIS Pro was used for the Network Analyst (Service Area), and QGIS was used for Layout, Join Attribute by Location, Field Calculator, and Attribute Table. Additionally, Python packages OSMNX, Folium, and Geopandas were used for geo-spatial data collection, processing, and interactive visualization. 
 
 \section{Research Results, Discussion, and Conclusion}
 \subsection{Analysis Result}
 
 \textbf{Competitor Analysis}
 
-The competitor analysis is analyzing existing music venues in city of Atlanta, which are potential business competitors of a new metal music venues.
-involved analyzing the spatial distribution of existing music venues, their attributes, and their density. 
-The majority of music venues are located in mid east part of Atlana, which reflect the clustering effect in economic geography((Florida et al., 2010).
+The competitor analysis focuses on the existing music venues in the city of Atlanta, which could potentially pose as business competitors for new metal music venues. This analysis involves examining the spatial distribution of existing music venues, their attributes, and their kernel density.
 
-\begin{figure}[H]
-\begin{center}
-\centering
-\includegraphics[width=1\textwidth]{map2/1_competitor.jpg}
-\caption{Figure 1: Different levels of urban development intensity}
-\label{fig:figure1}
-\end{center}
+A significant concentration of music venues is found in mid-eastern Atlanta, demonstrating the economic geography concept of clustering (Florida et al., 2010). Clustering of related businesses can reduce production costs due to competition among suppliers and increased specialization. Interestingly, even same-sector firms can benefit from clustering by attracting more suppliers and customers than they could individually.
+
+\begin{figure}[H] 
+    \centering
+    \subfloat{%
+        \includegraphics[width=0.48\textwidth]{map2/1_competitor.jpg}%
+        \label{fig:a}%
+        }%
+    \hfill%
+    \subfloat{%
+        \includegraphics[width=0.48\textwidth]{map2/heatmap.png}%
+        \label{fig:b}%
+        }%
+    \caption{all the data}
 \end{figure}
 
+
 \begin{center}
 \centering
-Figure 3: Neighborhood Music Venue Count
+Figure 8: Neighborhood Music Venue Count \& Figure 9: Music Venue Kernel Density
 \end{center}
+
 
 
 \textbf{Transport Analysis}
@@ -676,45 +681,34 @@ Midtown, distinguished by the highest number of music venues, exhibits a spatial
 
 The areas with the greatest accessibility, defined as those within a 0-5 minute driving time, display a spatial skew when compared to the distribution of music venues. While the music venues are predominantly distributed along an east-west axis, the service area extends more significantly in the north-south direction. This pattern can be largely attributed to the presence of the I-75 and I-85 highways. The influence of transport factors on accessibility and location analysis is evident. Music venues within a shorter driving time achieve higher transport scores, indicating that the proximity to major highways and ease of access are beneficial for the music venue business.
 
-
-\begin{figure}[H]
-\begin{center}
-\centering
-\includegraphics[width=1\textwidth]{map2/3_service score.jpg}
-\caption{Figure 1: Different levels of urban development intensity}
-\label{fig:figure1}
-\end{center}
-\end{figure}
-
-\begin{center}
-\centering
-Figure 3: Neighborhood Music Venue Count
-\end{center}
-
-
 \textbf{Demographic Analysis}
 
+The neighborhoods exhibiting the highest demographic suitability for music venues, in terms of demographic features, are predominantly located on the north and east side of the city of Atlanta. A comparison with the distribution of music venues reveals that the downtown area, despite having a lower demographic score, houses several music venues. This observation underscores the importance of considering transport features, specifically the service area, as it represents existing accessibility. The presence of music venues in areas with lower demographic scores suggests that accessibility may play a significant role in the location of these venues.
 
-
-\begin{figure}[H]
-\begin{center}
-\centering
-\includegraphics[width=1\textwidth]{map2/3_demographic summary.jpg}
-\caption{Figure 1: Different levels of urban development intensity}
-\label{fig:figure1}
-\end{center}
+\begin{figure}[H] 
+    \centering
+    \subfloat{%
+        \includegraphics[width=0.48\textwidth]{map2/3_service score.jpg}%
+        \label{fig:a}%
+        }%
+    \hfill%
+    \subfloat{%
+        \includegraphics[width=0.48\textwidth]{map2/3_demographic summary.jpg}%
+        \label{fig:b}%
+        }%
+    \caption{all the data}
 \end{figure}
 
 \begin{center}
 \centering
-Figure 3: Neighborhood Music Venue Count
+Figure 10: Transport Analysis: Service Area Score \& Figure 11: Demographic Analysis: Total Demographic Score
 \end{center}
 
+\newpage
 
 \textbf{Factor Integration}
 
-
-Upon the integration of transport and demographic scores, the neighborhoods that emerge with the highest scores (14 out of a possible 15) are Midtown, Inman Park, East Atlanta, Peachtree Heights West, and Buckhead Forest. These neighborhoods exhibit advantageous conditions for the establishment of a metal music venue business, as evidenced by their accessibility, demographic composition, and urban planning factors. Through the quantification and amalgamation of these factors, the study identifies these neighborhoods as the most propitious locations for music venue business.
+Upon the integration of transport and demographic scores, the neighborhoods that emerge with the highest scores (16 out of a possible 18) are Midtown, Inman Park, East Atlanta, Peachtree Heights West, and Buckhead Forest. These neighborhoods exhibit advantageous conditions for the establishment of a metal music venue business, as evidenced by their accessibility, demographic composition, and urban planning factors. Through the quantification and amalgamation of these factors, the study identifies these neighborhoods as the most propitious locations for music venue business.
 
 \begin{figure}[H]
 \begin{center}
@@ -725,7 +719,16 @@ Upon the integration of transport and demographic scores, the neighborhoods that
 \end{center}
 \end{figure}
 
+
+\begin{center}
+\centering
+Figure 12: Final Score for Neighborhoods
+\end{center}
+
+\newpage
 \textbf{Restriction Analysis}
+
+The Midtown, Inman Park, and Buckhead Forest neighborhoods outperform others in terms of zoning and LCI restrictions. This is due to their higher proportion of commercial and mixed-landuse areas, as well as their larger overlay area with LCI. These factors indicate a better business atmosphere, greater popularity walkability, and stronger economic drive.
 
 \begin{figure}[H]
 \begin{center}
@@ -739,7 +742,7 @@ Upon the integration of transport and demographic scores, the neighborhoods that
 \begin{figure}[H]
 \begin{center}
 \centering
-\includegraphics[width=0.7\textwidth]{map2/5_LCI.jpg}
+\includegraphics[width=0.6\textwidth]{map2/5_LCI.jpg}
 \caption{Figure 1: Different levels of urban development intensity}
 \label{fig:figure1}
 \end{center}
@@ -752,7 +755,7 @@ Taking into account the availability of parking lots, Midtown and Inman Park eme
 \begin{figure}[H]
 \begin{center}
 \centering
-\includegraphics[width=0.7\textwidth]{map2/5_parking.jpg}
+\includegraphics[width=1\textwidth]{map2/5_parking.jpg}
 \caption{Figure 1: Different levels of urban development intensity}
 \label{fig:figure1}
 \end{center}
@@ -767,27 +770,34 @@ On the other hand, Inman Park, with fewer existing music venues, exhibits a high
 
 \subsection{Discussion}
 
-
+This study assesses the spatial distribution and service area of existing music venues in Atlanta. It identifies neighborhoods with high potential for establishing metal music venues, considering transportation, demographic, and urban planning factors. The study utilizes two procedures: quantitative matrices ranking and restriction analysis, as spatial and mathematical models.
 
 
 \textbf{Merits and Long-term Effects}
 
-This study stands out due to its innovative and interdisciplinary approach. It successfully integrates concepts from different fields, creating a comprehensive framework for analysis. Furthermore, the research is vertical in nature, delving deep into the subject matter to provide nuanced insights. A key strength of this study lies in its ability to combine city-level location analysis with business-level user profiling. This combination allows for a more holistic understanding of the factors influencing the success of a music venue business.
+This study stands out due to its innovative and interdisciplinary approach in transport, GIS, urban planning, and sociology. It integrates concepts from different fields, creating a comprehensive model for location analysis. Furthermore, the research is vertical in nature, delving deep into the subject matter to provide nuanced insights. Also, this study combines city-level location analysis with business-level user profiling. This combination allows for a more holistic understanding of the factors influencing the success of a music venue business.
 
 The long-term effects of this project include promoting a vibrant music scene in Atlanta and providing valuable insights for businesses looking to establish a metal music venue in the city.
 
 \textbf{Uncertainty and Error}
 
-The uncertainty and error in this project could arise from the accuracy of the data sources and the assumptions made in the spatial and mathematical model.
+The potential for uncertainty and error in this project primarily stems from the accuracy of the data sources and the assumptions inherent in the spatial and mathematical models.
 
-\textbf{Data source Uncertainty and Error}
+\textbf{Data Source Uncertainty and Error}
 
-\textbf{Assumptions made in the spatial and mathematical model}
+As discussed in the data accuracy section, the data sources, particularly the point of interest data for music venues from Yelp, contain inherent uncertainties and errors. It is worth noting that certain establishments, such as bars and restaurants that host live metal music shows, may not be categorized as music venues and are therefore excluded from this project. For instance, \textit{Boggs Social \& Supply}, despite hosting significant metal music events, is categorized as a bar, food truck, or breakfast point of interest, and is not included in the music venue data.
+
+\textbf{Assumptions in the Spatial and Mathematical Model}
+
+While this study integrates various fields and employs a comprehensive model, the complexity of real-life location analysis extends beyond the scope of this research. For example, the process of opening a music venue is influenced by factors such as the investor’s social network (Tai, 2014), which are not accounted for in the current model.
 
 
 \textbf{Further Work}
 
-While the current study provides valuable insights, there are areas where further work could enhance the findings. One such area is the integration of machine learning techniques. Incorporating machine learning could allow for more sophisticated analyses and predictions, potentially uncovering patterns and relationships not evident in the current study.
+The integration of machine learning methodologies could potentially enhance the sophistication of the analyses and predictions, thereby revealing patterns and relationships that may not be immediately apparent in the current study. For instance, if data pertaining to metal music venues, transport, and demographics is collected on a national scale and subsequently subjected to rigorous cleaning processes, the application of Principal Component Analysis (PCA) could augment interpretability while simultaneously preserving the maximum amount of information. This could facilitate the identification of features that render a neighborhood suitable for music venues.
+
+Future research could employ Natural Language Processing (NLP) to extract insights from metalheads and venue owners, aiding in identifying locations that optimize social, cultural, and business capital. Additionally, Latent Dirichlet Allocation (LDA) topic modeling in Location-Based Social Networks (LSBN) could reveal meaningful topics and functional regions based on Point of Interest (POI) co-occurrence patterns, enhancing our understanding of metal music enthusiasts’ activities and music venue analysis (Gao et al., 2017).
+
 
 
 
@@ -821,7 +831,13 @@ While the current study provides valuable insights, there are areas where furthe
 
 {[}13{]} Accuracy. (2020, December 28). OpenStreetMap Wiki, . Retrieved 20:12, December 10, 2023 from https://wiki.openstreetmap.org/w/index.php?title=Accuracy\&oldid=2079309.
 
-{[}13{]} Shukla, A. (2022). The Social Psychology Of Heavy Metal \& Rock Music: Research On Metalheads. \textit{Cognition Today}. Retrieved September 19, 2022.
+{[}14{]} Shukla, A. (2022). The Social Psychology Of Heavy Metal \& Rock Music: Research On Metalheads. \textit{Cognition Today}. Retrieved September 19, 2022.
+
+{[}15{]} Gutiérrez, J., & García-Palomares, J. C. (2008). Distance-Measure Impacts on the Calculation of Transport Service Areas Using GIS. Environment and Planning B: Planning and Design, 35(3), 480-503. https://doi.org/10.1068/b33043
+
+{[}16{]}Gao, S., Janowicz, K., & Couclelis, H. (2017). Extracting urban functional regions from points of interest and human activities on location‐based social networks. Transactions in GIS, 21(3), 446-467.
+
+
 
 
 
